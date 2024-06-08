@@ -89,11 +89,26 @@ img.photo1 {
 }
 
 section.aboutme {
-    
+    padding-top: 100px;
     text-align: center;
     font-size: 2rem;
     margin: 0px 200px;
+    
+}
 
+h1.aboutmeheader, p.aboutme-text {
+    background-color: rgba(17, 26, 17, 0.144);
+    
+}
+
+h1.aboutmeheader {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+p.aboutme-text {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 
@@ -158,7 +173,7 @@ section.aboutme {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -700px;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
@@ -179,5 +194,7 @@ section.aboutme {
         cursor: pointer;
 
     }
+
+   
 
 }
