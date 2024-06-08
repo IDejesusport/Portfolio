@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">Ivan Dejesus</div>
+            <div class="navbar" id="navBar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4" onclick="hideMenu()">
+                    <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                  </svg>
+                  
+                <a href="/">ABOUT</a>
+                <a href="/">EXPERIENCE</a>
+                <a href="/">EDUCATION</a>
+                <a href="/">PROJECTS</a>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-1" onclick="showMenu()">
+                <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>
+        </nav>
+
+        <div class="intro">
+            <div class="intro-container">
+                <div class="introbox1"><p class="intro-text">Hello, <br>I am Ivan Dejesus <br> and I'm a Professional <br>Software Developer.</p></div>
+                <div><img src="./resources/css/images/photo1.png" alt="On Da PC" class="photo1"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+
+    <section class="aboutme">
+        <h1 class="aboutmeheader">WHO I AM?</h1>
+        <p class="aboutme-text">My name is IVAN DEJESUS. I am a professional and enthusiastic programmer in my daily life. 
+            I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am 
+            passionate about problem-solving. I love almost all the stacks of web application development and love to
+             make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things 
+             using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.</p>
+
+    </section>
+
+
+    <!-------- JavaScript for Toggle Menu ----------->
+    <script>
+        var navBar = document.getElementById("navBar")
+
+        function showMenu () {
+            navBar.style.right= "0"
+        }
+
+        function hideMenu () {
+            navBar.style.right= "-700px"
+        }
+
+    </script>
+
+</body>
+</html>
