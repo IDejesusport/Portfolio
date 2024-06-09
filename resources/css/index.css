@@ -14,54 +14,47 @@ body {
     background-image: url(images/background.png);
     background-position: center;
     background-size: auto;
-        position: relative;
+       
     
 }
 
 nav {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.199);
     display: flex;
-    justify-content: space-between;
-    padding: 1% 6%;
-    background-color: rgba(0, 0, 0, 0.178);
-    align-content: center;
+    justify-content: flex-end;
 }
 
-.logo {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.navbar {
-    flex: 1;
-    text-align: right;
-}
-
-.navbar a {
-    display: inline-block;
-    padding: 8px 12px;
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-
-.navbar a::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: black;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.navbar a:hover::after {
+.links-container {
+    height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-svg.size-4 {
+nav a { 
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+nav .home-link {
+    margin-right: auto;
+}
+
+#sidebar-active {
     display: none;
 }
 
-svg.size-1 {
+.open-sidebar-button, .close-sidebar-button {
     display: none;
 }
 
@@ -71,6 +64,7 @@ svg.size-1 {
     justify-content: center;
     position: relative;
     top: 150px;
+    
 }
 
 .introbox1 {
@@ -107,8 +101,8 @@ h1.aboutmeheader {
 }
 
 p.aboutme-text {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 
@@ -162,39 +156,43 @@ p.aboutme-text {
         height: 250px;
     }
 
-    .navbar a {
-        display: block;
-       
-    }
+    .links-container {
+        
+        flex-direction: column;
+        align-items: flex-start;
 
-    .navbar {
-        position: absolute;
-        background: lightblue;
-        height: 100vh;
-        width: 200px;
+        position: fixed;
         top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-
+        right: -100%;
+        z-index: 10;
+        width: 200px;
+        background-color: rgba(173, 216, 230, 0.507);
+        transition: 0.75s ease-out;
     }
 
-    svg.size-4 {
-        height: 20px;
+    nav a, .home-link {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        
         display: block;
-        margin: 10px;
-        cursor: pointer;
     }
 
-    svg.size-1 {
-        display: block;
-        height: 40px;
-        align-content: center;
-        cursor: pointer;
-
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
     }
 
-   
-
-}
+    #sidebar-active:checked ~ #overlay {
+        
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+   }
