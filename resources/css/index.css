@@ -8,6 +8,8 @@ body {
    background-color: lightblue;
 }
 
+/* Navbar Section */
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -65,6 +67,9 @@ nav .home-link {
     display: none;
 }
 
+
+/* About Me Section */
+
 .intro-container {
     display: flex;
     align-content: center;
@@ -90,7 +95,7 @@ img.photo1 {
 }
 
 section.aboutme {
-    padding-top: 100px;
+    padding-top: 200px;
     text-align: center;
     font-size: 2rem;
     margin: 0px 200px;
@@ -112,6 +117,123 @@ p.aboutme-text {
     border-bottom-right-radius: 15px;
 }
 
+/* Experience Section */
+
+img.photo2 {
+    filter: drop-shadow( 0 0.75rem rgba(0, 0, 0, 0.411));
+}
+
+.experiences {
+    
+    padding-top: 200px;
+    
+}
+
+.experience-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    
+    
+}
+
+.experience-grid-container {
+    display: grid;
+    align-items: center;
+    font-size: 2rem;
+    }
+    
+div.box1 {
+    
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(160, 64, 184, 0.753);
+    filter: drop-shadow(0px 25px 1rem rgba(0, 0, 0, 0.445));
+}    
+
+div.box2 {
+    
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(160, 64, 184, 0.753);
+
+    filter: drop-shadow(0px 25px 1rem rgba(0, 0, 0, 0.445));
+}    
+
+div.education, div.experience {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.educations {
+    margin: 50px auto;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+    padding-bottom: 100px;
+}
+
+.tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    padding: 1em;
+    background-color: rgba(204, 110, 204, 0.719);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem black;
+}
+
+.scroller {
+    max-width: 600px;
+    padding: 20px 0px
+    
+}
+
+.scroller__inner {
+    display: flex;
+    padding-block: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.scroller[data-animated="true"] {
+        overflow: hidden;
+        -webkit-mask: linear-gradient(
+            90deg, 
+            transparent, 
+            white 20%, 
+            white 80%, 
+            transparent);
+        mask: linear-gradient(
+            90deg, 
+            transparent, 
+            white 20%, 
+            white 80%, 
+            transparent);
+}
+
+[data-animated="true"] .scroller__inner {
+        flex-wrap: nowrap;
+        animation: scroll 20s linear infinite;
+        width: fit-content;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+    
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -128,7 +250,7 @@ p.aboutme-text {
 
     p.intro-text {
   
-        font-size: 60px;
+        font-size: 40px;
         text-align: center;
 
     }
@@ -142,18 +264,79 @@ p.aboutme-text {
         font-size: 12px;
     }
 
+    .home-link {
+        font-size: 1.25rem;
+    }
+
+    .experience-container {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            margin: 10% 10%;
+               
+    }
+
+    div.box1 {
+        margin: 50px 0px;
+    }
+
+    .box01 {
+        
+        text-align: center;
+    }
+
+    img.photo2 {
+       
+        text-align: center;
+        
+    }
+
+    .experiences {
+    
+        padding-top: 100px;
+        
+    }
+
+    
+
 } 
 
 @media (max-width: 768px) {
     
-    .nav a {
+    .links-container a {
        
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 
-    .home-link {
-        font-size: 1.25rem;
+    img.photo1 {
+        height: 300px;
     }
+
+    p.intro-text {
+        font-size: 1.5rem;
+    }
+
+    img.photo2 {
+       
+        height: 250px;
+        
+    }
+
+    section.aboutme {
+        padding-top: 100px;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0px 50px;
+        
+    }
+
+    .experiences {
+    
+        padding-top: 100px;
+        
+    }
+    
 
 }
 
@@ -206,4 +389,32 @@ p.aboutme-text {
         left: 0;
         z-index: 9;
     }
+
+    img.photo2 {
+       
+        height: 150px;
+        
+    }
+
+    .experiences {
+    
+        padding-top: 10px;
+        
+    }
+    
+
+    .box1, .box2 {
+        font-size: 1rem;
+    }
+
+    div.experience, div.education {
+        font-size: 1rem;
+    }
+
+    .scroller {
+        max-width: 300px;
+        padding: 20px 0px
+        
+    }
+
    }
