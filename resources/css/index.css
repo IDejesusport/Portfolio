@@ -42,6 +42,7 @@ nav {
 nav a { 
     height: 100%;
     padding: 0 10px;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -107,8 +108,8 @@ h1.aboutmeheader {
 }
 
 p.aboutme-text {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 
@@ -145,9 +146,13 @@ p.aboutme-text {
 
 @media (max-width: 768px) {
     
-    .navbar a {
+    .nav a {
        
-        font-size: 1rem;
+        font-size: 0.5rem;
+    }
+
+    .home-link {
+        font-size: 1.25rem;
     }
 
 }
