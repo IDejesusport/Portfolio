@@ -1,4 +1,78 @@
-Hello! Welcome to my portfolio!
-if you are seeing this then you are interested in what projects I have made along my learning path
-Please feel free to look and review my work. I have simple and complex projects for your viewing pleasure!
-Thank you for reading this! 
+# Hello, I'm Ivan!
+-------
+
+
+Welcome to my portfolio! This repository contains information regarding my past and present experience in the IT field as well as some projects that I have done overtime!
+
+## Projects Section
+----
+
+
+### HTML
+
+
+#### Basic
+
+> Blockquote
+
+#### Intermediate 
+
+> Blockquote
+
+#### Advanced
+
+> Blockquote
+
+---
+
+### CSS
+
+
+#### Basic
+
+> Blockquote
+
+#### Intermediate 
+
+> Blockquote
+
+#### Advanced
+
+> Blockquote
+
+---
+
+### JavaScript
+
+
+#### Basic
+
+> Blockquote
+
+#### Intermediate 
+
+> Blockquote
+
+#### Advanced
+
+> Blockquote
+
+And **bold**, *italics*, and even *italics and later **bold***. Even ~~strikethrough~~. [A link](https://markdowntohtml.com) to somewhere.
+
+And code highlighting:
+
+```js
+var foo = 'bar';
+
+function baz(s) {
+   return foo + ':' + s;
+}
+```
+
+Or inline code like `var foo = 'bar';`.
+
+Or an image of bears
+
+![bears](http://placebear.com/200/200)
+
+The end ...
