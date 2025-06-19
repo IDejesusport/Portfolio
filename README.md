@@ -13,7 +13,7 @@ Welcome to my portfolio! This repository contains information regarding my past 
 
 #### Basic
 
-> Blockquote
+[Visit my Personal Bio Page](https://idejesusport.github.io/Personal-Bio-Page/)
 
 #### Intermediate 
 
